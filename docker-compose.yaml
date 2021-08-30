@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  devbox:
+    build:
+      context: "."
+      dockerfile: "docker/devbox.dockerfile"
+    image: "xxxcypherxxx/dnerd:devbox"
+    volumes:
+      - "./:/app"
